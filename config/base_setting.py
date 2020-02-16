@@ -28,8 +28,8 @@ STATUS_MAPPING = {
 }
 
 MINA_APP = {
-    'appid':'wx360d7b8ff0881fd3',
-    'appkey':'xxxxxxxxxxxxx换自己的',
+    'appid':'wxd10a0b3ffef63cb9',
+    'appkey':'17f920e571a827f40ccf26106e669540',
     'paykey':'xxxxxxxxxxxxxx换自己的',
     'mch_id':'xxxxxxxxxxxx换自己的',
     'callback_url':'/api/order/callback'
@@ -43,7 +43,7 @@ UPLOAD = {
 }
 
 APP = {
-    'domain':'http://192.168.0.119:8999'
+    'domain':'http://127.0.0.1:8999'
 }
 
 
