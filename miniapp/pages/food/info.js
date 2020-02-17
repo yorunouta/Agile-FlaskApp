@@ -176,29 +176,29 @@ Page({
                 });
             }
         });
-    },
-    onShareAppMessage: function () {
-        var that = this;
-        return {
-            title: that.data.info.name,
-            path: '/pages/food/info?id=' + that.data.info.id,
-            success: function (res) {
-                // 转发成功
-                wx.request({
-                    url: app.buildUrl("/member/share"),
-                    header: app.getRequestHeader(),
-                    method: 'POST',
-                    data: {
-                        url: utils.getCurrentPageUrlWithArgs()
-                    },
-                    success: function (res) {
-
-                    }
-                });
-            },
-            fail: function (res) {
-                // 转发失败
-            }
-        }
-    }
+    }//,
+    // onShareAppMessage: function () {
+    //     var that = this;
+    //     return {
+    //         title: that.data.info.name,
+    //         path: '/pages/food/info?id=' + that.data.info.id,
+    //         success: function (res) {
+    //             // 转发成功
+    //             wx.request({
+    //                 url: app.buildUrl("/member/share"),
+    //                 header: app.getRequestHeader(),
+    //                 method: 'POST',
+    //                 data: {
+    //                     url: utils.getCurrentPageUrlWithArgs()
+    //                 },
+    //                 success: function (res) {
+    //
+    //                 }
+    //             });
+    //         },
+    //         fail: function (res) {
+    //             // 转发失败
+    //         }
+    //     }
+    // }
 });

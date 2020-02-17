@@ -20,6 +20,10 @@ IGNORE_CHECK_LOGIN_URLS = [
     "^favicon.icon"
 ]
 
+API_IGNORE_URLS = [
+    "^/api"
+]
+
 PAGE_SIZE = 50
 PAGE_DISPLAY = 10
 STATUS_MAPPING = {

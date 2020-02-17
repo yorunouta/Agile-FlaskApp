@@ -5,7 +5,7 @@ from common.libs.UrlManager import UrlManager
 from common.models.member.Member import Member
 from common.models.member.MemberComments import MemberComments
 from common.models.food.Food import Food
-#from common.models.pay.PayOrder import PayOrder
+from common.models.pay.PayOrder import PayOrder
 from application import app,db
 route_member = Blueprint( 'member_page',__name__ )
 
