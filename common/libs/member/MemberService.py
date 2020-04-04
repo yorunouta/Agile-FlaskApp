@@ -21,6 +21,8 @@ class MemberService():
             .format(app.config['MINA_APP']['appid'], app.config['MINA_APP']['appkey'], code)
         r = requests.get(url)
         res = json.loads(r.text)
+        print("***************")
+        print(res)
         openid = None
         if 'openid' in res:
             openid = res['openid']

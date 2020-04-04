@@ -1,6 +1,6 @@
-#SQLALCHEMY_DATABASE_URI = 'mysql://root:123456@39.96.95.36/food_db'
-SQLALCHEMY_DATABASE_URI = 'mysql://root:Weimiaode18@127.0.0.1/food_db'
-SQLALCHEMY_TRACK_MODIFICATIONS = False
-SQLALCHEMY_ECHO = True
-SQLALCHEMY_ENCODING = "utf-8"
+# -*- coding: utf-8 -*-
 DEBUG = True
+SQLALCHEMY_ECHO = True
+SQLALCHEMY_DATABASE_URI = 'mysql://root:Weimiaode18@127.0.0.1/food_db?charset=utf8mb4'
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+SQLALCHEMY_ENCODING = "utf8mb4"

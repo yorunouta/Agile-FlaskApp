@@ -1,23 +1,23 @@
-SERVER_PORT = 8999
-SERVER_HOST = '127.0.0.1'
-SQLALCHEMY_ECHO = False
+# -*- coding: utf-8 -*-
+SERVER_PORT = 8998
 DEBUG = False
+SQLALCHEMY_ECHO = False
 
-SQLALCHEMY_DATABASE_URI = 'mysql://root:Weimiaode18@127.0.0.1/food_db'
-SQLALCHEMY_TRACK_MODIFICATIONS = False
-SQLALCHEMY_ECHO = True
-SQLALCHEMY_ENCODING = "utf-8"
-DEBUG = True
+#有可能你使用浏览器看到的一串字符串不是那么容易看懂的，这是因为python底层使用unicode编码。
+#通过设置下面的参数可以解决这个问题。
+JSON_AS_ASCII = False
 
-AUTH_COOKIE_NAME = "myfood"
+AUTH_COOKIE_NAME = "mooc_food"
 
+SEO_TITLE = "Python Flask构建微信小程序订餐系统"
+##过滤url
 IGNORE_URLS = [
     "^/user/login"
 ]
 
 IGNORE_CHECK_LOGIN_URLS = [
     "^/static",
-    "^favicon.icon"
+    "^/favicon.ico"
 ]
 
 API_IGNORE_URLS = [
@@ -26,6 +26,7 @@ API_IGNORE_URLS = [
 
 PAGE_SIZE = 50
 PAGE_DISPLAY = 10
+
 STATUS_MAPPING = {
     "1":"正常",
     "0":"已删除"
@@ -33,9 +34,9 @@ STATUS_MAPPING = {
 
 MINA_APP = {
     'appid':'wxd10a0b3ffef63cb9',
-    'appkey':'17f920e571a827f40ccf26106e669540',
-    'paykey':'wx201410272009395522657a690389285100',
-    'mch_id':'1230000109',
+    'appkey':'4c32da8ef513d4b132ed1e20a7fd84c0',
+    'paykey':'xxxxxxxxxxxxxx换自己的',
+    'mch_id':'xxxxxxxxxxxx换自己的',
     'callback_url':'/api/order/callback'
 }
 
@@ -47,7 +48,7 @@ UPLOAD = {
 }
 
 APP = {
-    'domain':'http://127.0.0.1:8999'
+    'domain':'http://0.0.0.0:8998'
 }
 
 
@@ -65,7 +66,3 @@ PAY_STATUS_DISPLAY_MAPPING = {
     "-6":"待确认",
     "-5":"待评价"
 }
-
-RELEASE_VERSION = "1-0-0"
-
-

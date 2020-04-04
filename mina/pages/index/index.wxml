@@ -1,0 +1,25 @@
+<!--start.wxml-->
+<view class="container">
+  <view class="remind-box" wx:if="{{remind}}">
+  </view>
+  <block wx:else>
+    <view class="content">
+      <view class="hd" style="transform:rotateZ({{angle}}deg);">
+<image class="logo" src="/images/more/logo.png"></image>
+      </view>
+      <view class="bd">
+
+
+        <view class="confirm-btn" bindtap='goToIndex' wx:if="{{regFlag==true}}">
+          <text>GO</text>
+        </view>
+
+        <button class="confirm-btn"  open-type="getUserInfo" bindgetuserinfo="login" wx:if="{{regFlag==false}}">
+            授权登录
+        </button>
+
+        <text class="copyright">敏捷作业</text>
+      </view>
+    </view>
+  </block>
+</view>
