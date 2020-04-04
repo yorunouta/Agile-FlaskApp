@@ -7,8 +7,8 @@ from common.models.food.Food import Food
 from common.models.pay.PayOrder import PayOrder
 from common.libs.UrlManager import UrlManager
 from common.libs.Helper import getCurrentDate
-#from common.libs.pay.PayService import PayService
-#from common.libs.pay.WeChatService import WeChatService
+from common.libs.pay.PayService import PayService
+from common.libs.pay.WeChatService import WeChatService
 from common.libs.member.CartService import CartService
 from common.models.member.MemberAddress import MemberAddress
 from common.models.member.OauthMemberBind import OauthMemberBind

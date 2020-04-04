@@ -21,8 +21,7 @@ def myAddressList():
 				"nickname":item.nickname,
 				"mobile":item.mobile,
 				"is_default":item.is_default,
-				#"address":"%s%s%s%s"%( item.province_str,item.city_str,item.area_str,item.address ),
-				"address": "江苏省南京市鼓楼区%s" %( item.address ),
+				"address":"%s%s%s%s"%( item.province_str,item.city_str,item.area_str,item.address ),
 			}
 			data_list.append( tmp_data )
 	resp['data']['list'] = data_list

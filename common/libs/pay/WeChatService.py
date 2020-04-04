@@ -4,7 +4,6 @@ import xml.etree.ElementTree as ET
 from application import app,db
 from common.models.pay.OauthAccessToken import OauthAccessToken
 from common.libs.Helper import getCurrentDate
-import time
 class WeChatService():
 
     def __init__(self,merchant_key = None):
@@ -37,7 +36,6 @@ class WeChatService():
         app.logger.info( r.text )
         if r.status_code == 200:
             prepay_id = self.xml_to_dict( r.text ).get('prepay_id')
-            prepay_id = str(int(time.time()))
             pay_sign_data = {
                 'appId': pay_data.get('appid'),
                 'timeStamp': pay_data.get('out_trade_no'),

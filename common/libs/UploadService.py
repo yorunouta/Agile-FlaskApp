@@ -19,7 +19,7 @@ class UploadService():
 
 
 		root_path = app.root_path + config_upload['prefix_path']
-
+		#不使用getCurrentDate创建目录，为了保证其他写的可以用，这里改掉，服务器上好像对时间不兼容
 		file_dir = datetime.datetime.now().strftime("%Y%m%d")
 		save_dir = root_path + file_dir
 		if not os.path.exists( save_dir ):

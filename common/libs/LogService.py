@@ -5,7 +5,7 @@ import json
 from common.libs.Helper import getCurrentDate
 from common.models.log.AppAccessLog import AppAccessLog
 from common.models.log.AppErrorLog import AppErrorLog
-import re
+
 class LogService():
     @staticmethod
     def addAccessLog():
