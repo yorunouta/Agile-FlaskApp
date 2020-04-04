@@ -2,14 +2,17 @@
 SERVER_PORT = 8998
 DEBUG = False
 SQLALCHEMY_ECHO = False
+SQLALCHEMY_DATABASE_URI = 'mysql://root:Weimiaode18@127.0.0.1/food_db'
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+SQLALCHEMY_ECHO = True
+SQLALCHEMY_ENCODING = "utf-8"
+DEBUG = True
 
-#有可能你使用浏览器看到的一串字符串不是那么容易看懂的，这是因为python底层使用unicode编码。
-#通过设置下面的参数可以解决这个问题。
 JSON_AS_ASCII = False
 
-AUTH_COOKIE_NAME = "mooc_food"
+AUTH_COOKIE_NAME = "myfood"
 
-SEO_TITLE = "Python Flask构建微信小程序订餐系统"
+SEO_TITLE = "Flask构建微信订餐系统"
 ##过滤url
 IGNORE_URLS = [
     "^/user/login"
