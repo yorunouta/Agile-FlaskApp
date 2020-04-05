@@ -9,7 +9,7 @@ JSON_AS_ASCII = False
 
 AUTH_COOKIE_NAME = "mooc_food"
 
-SEO_TITLE = "Python Flask构建微信小程序订餐系统"
+SEO_TITLE = "基于Flask构建微信小程序食品购买系统"
 ##过滤url
 IGNORE_URLS = [
     "^/user/login"
